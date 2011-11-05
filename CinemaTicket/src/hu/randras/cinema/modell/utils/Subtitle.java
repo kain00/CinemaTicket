@@ -4,8 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public enum Subtitle {
-	SUBTITLE_YES("Y"),
-	SUBTITLE_NO("N");
+	SUBTITLE_HU("HU"),
+	SUBTITLE_EN("EN"),
+	SUBTITLE_RU("RU"),
+	SUBTITLE_DE("DE"),
+	SUBTITLE_NO("NO");
 	
 	private String value;
 	
@@ -24,8 +27,11 @@ public enum Subtitle {
 	}
 	
 	static {
-		map.put("Y", SUBTITLE_YES);
-		map.put("N", SUBTITLE_NO);
+		map.put("HU", SUBTITLE_HU);
+		map.put("EN", SUBTITLE_EN);
+		map.put("RU", SUBTITLE_RU);
+		map.put("DE", SUBTITLE_DE);
+		map.put("NO", SUBTITLE_NO);
 	}
 	
 	@Override
